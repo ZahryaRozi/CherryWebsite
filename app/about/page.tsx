@@ -129,7 +129,7 @@ export default function AboutPage() {
             ].map((item, i) => (
               <div key={i} className="group cursor-default">
                 <p className="text-white font-bold text-sm group-hover:text-primary transition-colors">{item.title}</p>
-                <p className="text-zinc-600 text-[10px] uppercase tracking-widest">{item.tag}</p>
+                <p className="text-zinc-600 text-[10px] uppercase tracking-widest"></p>
                 {i !== 3 && <div className="h-px bg-white/5 w-full mt-4" />}
               </div>
             ))}
