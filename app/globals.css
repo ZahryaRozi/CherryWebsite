@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FF94B4;          
+  --color-secondary: #D1B3FF;        
+  --color-tertiary: #FFB28A;         
+  --color-neutral-dark: #1C1B1F; 
+  /* This is the lighter color for your cards */
+  --color-surface-bright: #2b2930; 
+  
+  --font-headline: var(--font-jakarta);
+  --font-body: var(--font-vietnam);
+}
+
+body {
+  background-color: #1C1B1F;
+  color: #ffffff;
+}
+
+@layer utilities {
+  .socials { color: #FF94B4; font-style: normal;} 
+  .wpcontent { color: #D1B3FF; font-style: normal;} 
+  .rlcontent { color: #FFB28A; font-style: normal; }  
+  .time { color: #eeea6b; font-style: normal; }
+  .pos { color: #FF94B4; font-style: normal;}
+  .neg { color: #af5252; font-style: normal; }
+  
+  .emoticons { 
+    display: block;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+
+input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 6px; /* Narrow width */
+  height: 16px; /* Tall height for the pill look */
+  background: #FF94B4; /* Your primary color */
+  border-radius: 99px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 148, 180, 0.4);
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 6px;
+  height: 16px;
+  background: #FF94B4;
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+}
