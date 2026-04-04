@@ -135,18 +135,7 @@ export default function AboutPage() {
             ))}
           </div>
         </Card>
-
-
-
-
-
-
-
-
-
-
-
-
+        
         {/* BIG SPOTLIGHT (8/12 Columns) */}
         <Card title="IN MEMORY FOREVER" titleColor="text-primary" className="md:col-span-8">
           <div className="flex flex-col md:flex-row-reverse gap-8 items-center md:items-start">
