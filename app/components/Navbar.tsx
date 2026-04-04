@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-[#1C1B1F]/60 backdrop-blur-xl border-b border-white/5">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
         <div className="text-2xl font-bold tracking-tighter text-white font-headline">
-          CherryWebsite v2
+          CherryWebsite
         </div>
         
         <div className="hidden md:flex items-center gap-8 font-label text-sm font-medium tracking-tight">

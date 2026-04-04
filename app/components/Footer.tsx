@@ -18,7 +18,7 @@ export default function Footer() {
         {/* Right Section - Aligned Right */}
         <div className="flex flex-col items-end gap-10">
           <div className={`${footerTextStyle} text-right`}>
-            v2 Developed in 2026 <br/>
+            Developed in 2025-2026 <br/>
             Barely made in NextJs <br/>
             "Seamos todos positivos!! Viva la vida!"
           </div>
