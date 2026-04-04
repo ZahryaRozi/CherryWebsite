@@ -200,10 +200,10 @@ export default function Sidebar() {
       </div>
 
       {/* 5. Music Quotes */}
-      <Card className="bg-tertiary/5 border-tertiary/10">
+      <Card className="bg-primary/5 border-primary/10">
         <div className="space-y-6 text-sm italic text-zinc-300 font-body leading-relaxed">
           <p>"Beautiful music is the art of the prophets that can calm the agitations of the soul; it is one of the most magnificent and delightful presents God has given us."</p>
-          <p className="text-tertiary not-italic font-bold text-[10px] uppercase tracking-tighter">— Martin Luther</p>
+          <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Martin Luther</p>
         </div>
       </Card>
 
@@ -211,7 +211,7 @@ export default function Sidebar() {
       <div className="bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group">
         <img src="/resources/Main/images/Sidebar/TetoMiku.jpg" alt="Art" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
         <div className="px-6 py-5 border-t border-white/5">
-          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://x.com/takawoyu?lang=en" target="_blank" className="text-primary hover:underline">@takawoyu</a></p>
+          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://x.com/takawoyu?lang=en" target="_blank" className="text-secondary hover:underline">@takawoyu</a></p>
         </div>
       </div>
 
@@ -219,7 +219,7 @@ export default function Sidebar() {
       <Card>
         <div className="space-y-6 text-sm italic text-zinc-300 font-body">
           <p>"The worst enemy to creativity is self-doubt."</p>
-          <p className="text-primary not-italic font-bold text-[10px] uppercase tracking-tighter">— Sylvia Plath</p>
+          <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Sylvia Plath</p>
         </div>
       </Card>
 

@@ -490,7 +490,7 @@ function Sidebar() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Card, {
-                className: "bg-tertiary/5 border-tertiary/10",
+                className: "bg-primary/5 border-primary/10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "space-y-6 text-sm italic text-zinc-300 font-body leading-relaxed",
                     children: [
@@ -502,7 +502,7 @@ function Sidebar() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-tertiary not-italic font-bold text-[10px] uppercase tracking-tighter",
+                            className: "text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter",
                             children: "— Martin Luther"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Main/Sidebar.tsx",
@@ -541,7 +541,7 @@ function Sidebar() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "https://x.com/takawoyu?lang=en",
                                     target: "_blank",
-                                    className: "text-primary hover:underline",
+                                    className: "text-secondary hover:underline",
                                     children: "@takawoyu"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Main/Sidebar.tsx",
@@ -577,7 +577,7 @@ function Sidebar() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-primary not-italic font-bold text-[10px] uppercase tracking-tighter",
+                            className: "text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter",
                             children: "— Sylvia Plath"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Main/Sidebar.tsx",
@@ -637,7 +637,7 @@ function Sidebar() {
                         children: [
                             "Lyrics from: ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "#",
+                                href: "https://www.youtube.com/watch?v=S5dKDYX0NSE",
                                 className: "underline",
                                 children: "Lotus - Galdive"
                             }, void 0, false, {
@@ -676,7 +676,7 @@ function Sidebar() {
                             children: [
                                 "Credits to ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "#",
+                                    href: "https://www.pixiv.net/en/artworks/132288828",
                                     className: "text-secondary hover:underline",
                                     children: "Konfleis"
                                 }, void 0, false, {
@@ -804,7 +804,7 @@ const BLOG_POSTS = [
     },
     {
         id: 2,
-        title: "Second Mayor Website Update! ",
+        title: "Second Mayor Website Update!",
         date: "May 17, 2025",
         content: `
       Hello <em class="socials">Wired</em>! This is this <em class="wpcontent">website's Second Mayor Update</em>!
@@ -818,6 +818,29 @@ const BLOG_POSTS = [
       Anyway, I'm gonna go to sleep like right now so...
       <br/>
       <em class="pos">Thanks for reading!</em> And remember to be positive!
+    `
+    },
+    {
+        id: 3,
+        title: "Third Mayor Website Update!",
+        date: "July 2, 2025",
+        content: `
+      Welcome Back <em class="socials">Wired</em>! This is this <em class="wpcontent">website's Third Mayor Update</em>!
+      <span class="emoticons">◝(˶˃ ᵕ ˂˶) ◜♡</span>
+      Now okay... I know it took <em class="time">a little bit of time</em>. But it's done! I feel <em class="pos">comfortable</em> with this new version, as I added more <em class="wpcontent">personal stuff</em> (Like the OCs section finally). <em class="time">At the time</em> of writing there are still <em class="neg">some things I have to figure out first</em>, so this update will probably get out <em class="time">a day or so later</em>.<br/>
+      I've been <em class="pos">learning more and more</em> about programming in order to make this page <em class="wpcontent">show off more of what I can do!</em> And the fact that for this update I <em class="wpcontent">redesigned it from the first version</em> made it a bit hard to finish. Actually, let me show you the <em>old design</em> from a screenshot of how it started! <br/>
+      <img src="/resources/BlogEntries/2025/may16-WebsiteArchive.png">
+      <em>Oh boy! It sure does look different!</em>
+      <span class="emoticons">( •͈૦•͈ )</span>
+      <em class="time">At the beginning</em> I wanted it to look more <em class="wpcontent">old-styled.</em> So I used simple shapes to design the page! <em class="time">But then</em> I thought about it more and I decided I wanted the page to look more like <em class="wpcontent">'me'</em> and, since I really love the <em class="rlcontent">Material You Design by Google</em>, I chose the page to be styled after <em class="rlcontent">MYD</em>. <br/>
+      <em class="time">Now</em>, this update also <em class="pos">added new stuff</em>! Like my cherished <em class="wpcontent">BookShelf</em>!! It is something I wanted to do for <em class="time">a long time</em> because, <em class="time">ever since I was a kid</em>, I've always made up a lot of stories in my mind, most of which <em class="neg">got lost to time and I'm trying to remember</em>. <em class="wpcontent">The BookShelf</em> was made so that I don't keep losing track of my stories and I have somewhere to archive (or even showcase) all of them. <br/>
+      For this, I decided it would keep the <em>old design</em> in <em class="wpcontent">The BookShelf</em>. I want it to feel as If you're looking to the past through a portal.
+      <span class="emoticons">(╭ರ_•́)</span>
+      <em class="time">Right now</em>, It's still pretty <em>empty</em>, I <em class="time">need some time</em> to gather all my thoughts and add each character because despite the fact I made a lot of stories, <em class="neg">almost all of them do not have good coherence or relation to each other</em>, which makes it extremely hard to figure out how to connect each. And to be honest, that's not the only thing! <br/>
+      <em class="wpcontent">The sidebars...</em> Those sidebars have me all <em class="neg">stressed out</em> just to figure out what to put in each!! It may sound funny but, holy moly!! But anyway, it's all for myself and others to enjoy so. <em class="pos">I will not give up!!</em>
+      <span class="emoticons">(≖⩊≖)</span>
+      I'm going to release this update feeling a bit more <em class="pos">excited and smart</em>. I really <em class="pos">like</em> how the page is turning out!!<br/>
+      <em class="pos">Thanks for reading!</em> And remember to study hard and be positive!
     `
     }
 ];
