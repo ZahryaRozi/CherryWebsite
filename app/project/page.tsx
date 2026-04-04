@@ -6,7 +6,6 @@ export default function ProjectsPage() {
   const [isBlinking, setIsBlinking] = useState(false);
 
   useEffect(() => {
-    // Set up an interval that toggles the state every 800ms
     const blinkInterval = setInterval(() => {
       setIsBlinking((prev) => !prev);
     }, 800);

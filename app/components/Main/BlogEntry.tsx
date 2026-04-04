@@ -1,4 +1,3 @@
-// app/components/BlogEntry.tsx
 import parse from 'html-react-parser';
 
 interface BlogProps {

@@ -202,7 +202,7 @@ export default function Sidebar() {
       {/* 5. Music Quotes */}
       <Card className="bg-tertiary/5 border-tertiary/10">
         <div className="space-y-6 text-sm italic text-zinc-300 font-body leading-relaxed">
-          <p>"Beautiful music is the art of the prophets..."</p>
+          <p>"Beautiful music is the art of the prophets that can calm the agitations of the soul; it is one of the most magnificent and delightful presents God has given us."</p>
           <p className="text-tertiary not-italic font-bold text-[10px] uppercase tracking-tighter">— Martin Luther</p>
         </div>
       </Card>
@@ -231,7 +231,17 @@ export default function Sidebar() {
       {/* 9. Lyrics Card */}
       <Card className="bg-secondary/5 border-secondary/10">
         <p className="text-zinc-300 text-sm italic font-body leading-relaxed whitespace-pre-line">
-          {`You are the petals of the life you...`}
+          {`You are the petals of the life
+            That slowly growing on me
+            We could be the king and the queen if you want to
+            We could find a getaway if you need to
+            I do it all for you
+            I do it all of you
+            The Sun and the Moon won't know what we'd be up to
+            The God is wrong if he won't let me love you
+            With all I have
+            With all my faith   
+          `}
         </p>
         <p className="mt-4 text-[10px] font-bold text-secondary">Lyrics from: <a href="#" className="underline">Lotus - Galdive</a></p>
       </Card>

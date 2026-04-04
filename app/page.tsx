@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-surface-bright border border-white/10 backdrop-blur-sm rounded-[3rem] p-8 md:p-16 mb-12 flex flex-col md:flex-row items-center gap-12">
         
-        {/* PFP Container - Large Rounded Square */}
+        {/* PFP Container */}
         <div className="relative w-56 h-56 md:w-64 md:h-64 flex-shrink-0">
           <img 
             src={pfpPath} 
