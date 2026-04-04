@@ -243,14 +243,14 @@ export default function Sidebar() {
             With all my faith   
           `}
         </p>
-        <p className="mt-4 text-[10px] font-bold text-secondary">Lyrics from: <a href="#" className="underline">Lotus - Galdive</a></p>
+        <p className="mt-4 text-[10px] font-bold text-secondary">Lyrics from: <a href="https://www.youtube.com/watch?v=S5dKDYX0NSE" className="underline">Lotus - Galdive</a></p>
       </Card>
 
       {/* 10. Teto Baguette Art */}
       <div className="bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group">
         <img src="/resources/Main/images/Sidebar/tetotetobaguette.jpg" alt="Teto" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
         <div className="px-6 py-5 border-t border-white/5">
-          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="#" className="text-secondary hover:underline">Konfleis</a></p>
+          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://www.pixiv.net/en/artworks/132288828" className="text-secondary hover:underline">Konfleis</a></p>
         </div>
       </div>
     </div>
