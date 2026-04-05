@@ -580,6 +580,40 @@
     order: 2;
   }
 
+  .container {
+    width: 100%;
+  }
+
+  @media (min-width: 40rem) {
+    .container {
+      max-width: 40rem;
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .container {
+      max-width: 48rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .container {
+      max-width: 64rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .container {
+      max-width: 80rem;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .container {
+      max-width: 96rem;
+    }
+  }
+
   .mx-auto {
     margin-inline: auto;
   }
@@ -997,16 +1031,6 @@
     border-color: var(--color-tertiary);
   }
 
-  .border-tertiary\/10 {
-    border-color: #ffb28a1a;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .border-tertiary\/10 {
-      border-color: color-mix(in oklab, var(--color-tertiary) 10%, transparent);
-    }
-  }
-
   .border-transparent {
     border-color: #0000;
   }
@@ -1095,16 +1119,6 @@
 
   .bg-surface-bright {
     background-color: var(--color-surface-bright);
-  }
-
-  .bg-tertiary\/5 {
-    background-color: #ffb28a0d;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-tertiary\/5 {
-      background-color: color-mix(in oklab, var(--color-tertiary) 5%, transparent);
-    }
   }
 
   .bg-white\/5 {
@@ -1239,6 +1253,10 @@
 
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
+  }
+
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
   }
 
   .pb-20 {
@@ -1831,6 +1849,18 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:sticky {
+      position: sticky;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:top-24 {
+      top: calc(var(--spacing) * 24);
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:order-1 {
       order: 1;
     }
@@ -1855,8 +1885,26 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:h-\[80vh\] {
+      height: 80vh;
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:grid-cols-12 {
       grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:overflow-y-auto {
+      overflow-y: auto;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:pr-4 {
+      padding-right: calc(var(--spacing) * 4);
     }
   }
 

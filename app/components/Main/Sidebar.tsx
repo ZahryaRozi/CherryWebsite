@@ -172,7 +172,26 @@ export default function Sidebar() {
         </div>
       </Card>
 
-      {/* 3. Music Taste */}
+      {/* 2. Blinkers-ish */}
+      <Card title="Blinkers">
+        <div className="space-y-6">
+          <div>
+            <div className="flex flex-wrap gap-2">
+              {["⚠️ FRICK 'AI' ART!!!! ⚠️", "🍦 I Love Icecream!! 🍦", "▀▄▀▄▀▄ WE SCENE 4EVR ▀▄▀▄▀▄" , "🐾 I <3 Cats 🐾" , "🩷 Pink! Pink! .... I <3 Pink!! 🩷" , "🏳️‍🌈 I Support Gay Rights 🏳️‍🌈", "⦮ ⦯ RAWR RAWR RAWR ⦮ ⦯"].map((g) => (
+                <span key={g} className="bg-white/5 border border-white/5 px-3 py-1 rounded-full text-[11px] text-zinc-300 font-body">{g}</span>
+              ))}
+            </div>
+          </div>
+    
+        </div>
+      </Card>
+
+      {/* 4. Meme Image */}
+      <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-lg">
+        <img src="/resources/Main/images/Sidebar/funnimeme1.png" alt="Funny Meme" className="w-full h-auto" />
+      </div>
+
+      {/* 5. Music Taste */}
       <Card title="Music Taste">
         <div className="space-y-6">
           <div>
@@ -194,19 +213,6 @@ export default function Sidebar() {
         </div>
       </Card>
 
-      {/* 4. Meme Image */}
-      <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-lg">
-        <img src="/resources/Main/images/Sidebar/funnimeme1.png" alt="Funny Meme" className="w-full h-auto" />
-      </div>
-
-      {/* 5. Music Quotes */}
-      <Card className="bg-primary/5 border-primary/10">
-        <div className="space-y-6 text-sm italic text-zinc-300 font-body leading-relaxed">
-          <p>"Beautiful music is the art of the prophets that can calm the agitations of the soul; it is one of the most magnificent and delightful presents God has given us."</p>
-          <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Martin Luther</p>
-        </div>
-      </Card>
-
       {/* 6. Teto & Miku Art */}
       <div className="bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group">
         <img src="/resources/Main/images/Sidebar/TetoMiku.jpg" alt="Art" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
@@ -215,11 +221,11 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* 7. Life Quotes */}
-      <Card>
-        <div className="space-y-6 text-sm italic text-zinc-300 font-body">
-          <p>"The worst enemy to creativity is self-doubt."</p>
-          <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Sylvia Plath</p>
+      {/* 7. Music Quotes */}
+      <Card className="bg-primary/5 border-primary/10">
+        <div className="space-y-6 text-sm italic text-zinc-300 font-body leading-relaxed">
+          <p>"Beautiful music is the art of the prophets that can calm the agitations of the soul; it is one of the most magnificent and delightful presents God has given us."</p>
+          <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Martin Luther</p>
         </div>
       </Card>
 
@@ -228,7 +234,23 @@ export default function Sidebar() {
         <img src="/resources/Main/images/Sidebar/kittycathealer.jpg" alt="Cat" className="w-full h-auto" />
       </div>
 
-      {/* 9. Lyrics Card */}
+      {/* 9. Life Quotes */}
+      <Card>
+        <div className="space-y-6 text-sm italic text-zinc-300 font-body">
+          <p>"The worst enemy to creativity is self-doubt."</p>
+          <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Sylvia Plath</p>
+        </div>
+      </Card>
+
+      {/* 10. Teto Baguette Art */}
+      <div className="bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group">
+        <img src="/resources/Main/images/Sidebar/tetotetobaguette.jpg" alt="Teto" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
+        <div className="px-6 py-5 border-t border-white/5">
+          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://www.pixiv.net/en/artworks/132288828" className="text-secondary hover:underline">Konfleis</a></p>
+        </div>
+      </div>
+
+      {/* 11. Lyrics Card */}
       <Card className="bg-secondary/5 border-secondary/10">
         <p className="text-zinc-300 text-sm italic font-body leading-relaxed whitespace-pre-line">
           {`You are the petals of the life
@@ -246,13 +268,18 @@ export default function Sidebar() {
         <p className="mt-4 text-[10px] font-bold text-secondary">Lyrics from: <a href="https://www.youtube.com/watch?v=S5dKDYX0NSE" className="underline">Lotus - Galdive</a></p>
       </Card>
 
-      {/* 10. Teto Baguette Art */}
-      <div className="bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group">
-        <img src="/resources/Main/images/Sidebar/tetotetobaguette.jpg" alt="Teto" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
-        <div className="px-6 py-5 border-t border-white/5">
-          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://www.pixiv.net/en/artworks/132288828" className="text-secondary hover:underline">Konfleis</a></p>
-        </div>
+      {/* 12. Other Funi Meme */}
+      <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-lg">
+        <img src="/resources/Main/images/Sidebar/expensivebad.jpeg" alt="BadFoodButExpensive" className="w-full h-auto" />
       </div>
+
+      {/* 13. Inspiring stuff */}
+      <Card className="bg-primary/5 border-primary/10">
+        <div className="space-y-6 text-sm italic text-zinc-300 font-body leading-relaxed">
+          <p>"You are allowed to disappoint people. You are allowed to be the villain in someone else's story. Your only job is to be the hero in your own. "</p>
+          <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Lumierae</p>
+        </div>
+      </Card>
     </div>
   );
 }
