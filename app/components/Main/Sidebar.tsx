@@ -96,7 +96,7 @@ export default function Sidebar() {
         <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
           <audio 
             ref={audioRef}
-            src="/resources/Main/Audio/louie.mp3" 
+            src="/resources/Main/Audio/Dawning of the Season.mp3l" 
             preload="metadata"
             onTimeUpdate={() => {
               if (audioRef.current) {
@@ -116,8 +116,8 @@ export default function Sidebar() {
           <div className="flex gap-4 mb-5">
             <img src="https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F54d9d91c4a512acf0bcb02e1c2333222.1000x1000x1.png" alt="Album" className="w-16 h-16 rounded-xl object-cover" />
             <div className="flex flex-col justify-center">
-              <h4 className="text-primary font-bold text-sm">louie. (Preview)</h4>
-              <p className="text-zinc-500 text-xs font-body">shteppi</p>
+              <h4 className="text-primary font-bold text-sm">Dawning of the Season (Preview)</h4>
+              <p className="text-zinc-500 text-xs font-body">Magdalena Bay</p>
             </div>
           </div>
 
