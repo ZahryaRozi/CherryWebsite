@@ -114,7 +114,7 @@ export default function Sidebar() {
           />
           
           <div className="flex gap-4 mb-5">
-            <img src="https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F54d9d91c4a512acf0bcb02e1c2333222.1000x1000x1.png" alt="Album" className="w-16 h-16 rounded-xl object-cover" />
+            <img src="https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F3e2680f2877d4a5aab381e092c8d4812.1000x1000x1.jpg" alt="Album" className="w-16 h-16 rounded-xl object-cover" />
             <div className="flex flex-col justify-center">
               <h4 className="text-primary font-bold text-sm">Dawning of the Season (Preview)</h4>
               <p className="text-zinc-500 text-xs font-body">Magdalena Bay</p>
