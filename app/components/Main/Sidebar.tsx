@@ -177,7 +177,7 @@ export default function Sidebar() {
         <div className="space-y-6">
           <div>
             <div className="flex flex-wrap gap-2">
-              {["🌷͙֒≽^• ˕ • ྀི≼ She/Her ≽^• ˕ • ྀི≼🌷͙֒", "🐾 I <3 Cats 🐾", "🏳️‍⚧️ This User is Trains 🏳️‍⚧️","⚠️ FRICK 'AI' ART!!!! ⚠️", "🍦 I Love Icecream!! 🍦", "🌈 Nyan Nyan 🌈" , "▀▄▀▄▀▄ WE SCENE 4EVR ▀▄▀▄▀▄" , "🩷 Pink! Pink! .... I <3 Pink!! 🩷" , "😎 BE COOL 😎","🏳️‍🌈 I Support Gay Rights 🏳️‍🌈", "🥖 Teto Fan 🥖", "⦮ ⦯ RAWR RAWR RAWR ⦮ ⦯"].map((g) => (
+              {["🌷͙֒≽^• ˕ • ྀི≼ She/Her ≽^• ˕ • ྀི≼🌷͙֒", "🐾 I <3 Cats 🐾","⚠️ FRICK 'AI' ART!!!! ⚠️", "🍦 I Love Icecream!! 🍦", "🌈 Nyan Nyan 🌈" , "▀▄▀▄▀▄ WE SCENE 4EVR ▀▄▀▄▀▄" , "🩷 Pink! Pink! .... I <3 Pink!! 🩷" , "😎 BE COOL 😎","🏳️‍🌈 I Support Gay Rights 🏳️‍🌈", "🥖 Teto Fan 🥖", "⦮ ⦯ RAWR RAWR RAWR ⦮ ⦯"].map((g) => (
                 <span key={g} className="bg-white/5 border border-white/5 px-3 py-1 rounded-full text-[11px] text-zinc-300 font-body">{g}</span>
               ))}
             </div>
@@ -213,11 +213,11 @@ export default function Sidebar() {
         </div>
       </Card>
 
-      {/* 6. Teto & Miku Art */}
+      {/* 6. Teto Art */}
       <div className="bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group">
-        <img src="/resources/Main/images/Sidebar/TetoMiku.jpg" alt="Art" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
+        <img src="/resources/Main/images/Sidebar/tetotetobaguette.jpg" alt="Art" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
         <div className="px-6 py-5 border-t border-white/5">
-          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://x.com/takawoyu?lang=en" target="_blank" className="text-secondary hover:underline">@takawoyu</a></p>
+          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://www.pixiv.net/en/artworks/132288828" target="_blank" className="text-secondary hover:underline">Konfleis</a></p>
         </div>
       </div>
 
@@ -242,12 +242,9 @@ export default function Sidebar() {
         </div>
       </Card>
 
-      {/* 10. Teto Baguette Art */}
-      <div className="bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group">
-        <img src="/resources/Main/images/Sidebar/tetotetobaguette.jpg" alt="Teto" className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700" />
-        <div className="px-6 py-5 border-t border-white/5">
-          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://www.pixiv.net/en/artworks/132288828" className="text-secondary hover:underline">Konfleis</a></p>
-        </div>
+      {/* 10. Teto Cookin */}
+      <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-lg">
+        <img src="/resources/Main/images/Sidebar/WhoLetCook.webp" alt="WhoLetBroCook" className="w-full h-auto" />
       </div>
 
       {/* 11. Lyrics Card */}

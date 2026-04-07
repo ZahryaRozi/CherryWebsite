@@ -400,7 +400,6 @@ function Sidebar() {
                             children: [
                                 "🌷͙֒≽^• ˕ • ྀི≼ She/Her ≽^• ˕ • ྀི≼🌷͙֒",
                                 "🐾 I <3 Cats 🐾",
-                                "🏳️‍⚧️ This User is Trains 🏳️‍⚧️",
                                 "⚠️ FRICK 'AI' ART!!!! ⚠️",
                                 "🍦 I Love Icecream!! 🍦",
                                 "🌈 Nyan Nyan 🌈",
@@ -558,7 +557,7 @@ function Sidebar() {
                 className: "bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "/resources/Main/images/Sidebar/TetoMiku.jpg",
+                        src: "/resources/Main/images/Sidebar/tetotetobaguette.jpg",
                         alt: "Art",
                         className: "w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700"
                     }, void 0, false, {
@@ -573,10 +572,10 @@ function Sidebar() {
                             children: [
                                 "Credits to ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "https://x.com/takawoyu?lang=en",
+                                    href: "https://www.pixiv.net/en/artworks/132288828",
                                     target: "_blank",
                                     className: "text-secondary hover:underline",
-                                    children: "@takawoyu"
+                                    children: "Konfleis"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Main/Sidebar.tsx",
                                     lineNumber: 220,
@@ -677,45 +676,17 @@ function Sidebar() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "/resources/Main/images/Sidebar/tetotetobaguette.jpg",
-                        alt: "Teto",
-                        className: "w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700"
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/Main/Sidebar.tsx",
-                        lineNumber: 247,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "px-6 py-5 border-t border-white/5",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-[10px] text-zinc-400 font-bold",
-                            children: [
-                                "Credits to ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "https://www.pixiv.net/en/artworks/132288828",
-                                    className: "text-secondary hover:underline",
-                                    children: "Konfleis"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/Main/Sidebar.tsx",
-                                    lineNumber: 249,
-                                    columnNumber: 73
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/components/Main/Sidebar.tsx",
-                            lineNumber: 249,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/Main/Sidebar.tsx",
-                        lineNumber: 248,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                className: "rounded-[2rem] overflow-hidden border border-white/10 shadow-lg",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: "/resources/Main/images/Sidebar/WhoLetCook.webp",
+                    alt: "WhoLetBroCook",
+                    className: "w-full h-auto"
+                }, void 0, false, {
+                    fileName: "[project]/app/components/Main/Sidebar.tsx",
+                    lineNumber: 247,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/app/components/Main/Sidebar.tsx",
                 lineNumber: 246,
                 columnNumber: 7
@@ -738,7 +709,7 @@ function Sidebar() {
           `
                     }, void 0, false, {
                         fileName: "[project]/app/components/Main/Sidebar.tsx",
-                        lineNumber: 255,
+                        lineNumber: 252,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -751,19 +722,19 @@ function Sidebar() {
                                 children: "Lotus - Galdive"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Main/Sidebar.tsx",
-                                lineNumber: 268,
+                                lineNumber: 265,
                                 columnNumber: 79
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Main/Sidebar.tsx",
-                        lineNumber: 268,
+                        lineNumber: 265,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Main/Sidebar.tsx",
-                lineNumber: 254,
+                lineNumber: 251,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -774,12 +745,12 @@ function Sidebar() {
                     className: "w-full h-auto"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Main/Sidebar.tsx",
-                    lineNumber: 273,
+                    lineNumber: 270,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/Main/Sidebar.tsx",
-                lineNumber: 272,
+                lineNumber: 269,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Card, {
@@ -791,7 +762,7 @@ function Sidebar() {
                             children: '"You are allowed to disappoint people. You are allowed to be the villain in someone else\'s story. Your only job is to be the hero in your own. "'
                         }, void 0, false, {
                             fileName: "[project]/app/components/Main/Sidebar.tsx",
-                            lineNumber: 279,
+                            lineNumber: 276,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -799,18 +770,18 @@ function Sidebar() {
                             children: "— Lumierae"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Main/Sidebar.tsx",
-                            lineNumber: 280,
+                            lineNumber: 277,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Main/Sidebar.tsx",
-                    lineNumber: 278,
+                    lineNumber: 275,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/Main/Sidebar.tsx",
-                lineNumber: 277,
+                lineNumber: 274,
                 columnNumber: 7
             }, this)
         ]
