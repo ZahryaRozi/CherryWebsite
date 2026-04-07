@@ -5,7 +5,6 @@
   --color-secondary: #D1B3FF;        
   --color-tertiary: #FFB28A;         
   --color-neutral-dark: #1C1B1F; 
-  /* This is the lighter color for your cards */
   --color-surface-bright: #2b2930; 
   
   --font-headline: var(--font-jakarta);
@@ -18,11 +17,11 @@ body {
 }
 
 @layer utilities {
-  .socials { color: #FF94B4; font-style: normal;} 
-  .wpcontent { color: #D1B3FF; font-style: normal;} 
-  .rlcontent { color: #FFB28A; font-style: normal; }  
+  .socials { color: #9d94ff; font-style: normal;} 
+  .wpcontent { color: #ffb3c1; font-style: normal;} 
+  .rlcontent { color: #ffc48a; font-style: normal; }  
   .time { color: #eeea6b; font-style: normal; }
-  .pos { color: #FF94B4; font-style: normal;}
+  .pos { color: #9fff94; font-style: normal;}
   .neg { color: #af5252; font-style: normal; }
   
   .emoticons { 
@@ -38,7 +37,7 @@ input[type='range']::-webkit-slider-thumb {
   appearance: none;
   width: 6px; /* Narrow width */
   height: 16px; /* Tall height for the pill look */
-  background: #FF94B4; /* Your primary color */
+  background: #FF94B4; /* Primary color */
   border-radius: 99px;
   cursor: pointer;
   box-shadow: 0 0 8px rgba(255, 148, 180, 0.4);

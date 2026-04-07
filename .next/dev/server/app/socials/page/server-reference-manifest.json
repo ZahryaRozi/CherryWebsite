@@ -1,0 +1,17 @@
+{
+  "node": {
+    "4092635f11961105f0af3ca2d7581af3dabd6e0dcd": {
+      "workers": {
+        "app/socials/page": {
+          "moduleId": "[project]/.next-internal/server/app/socials/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/socials/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "postMessage",
+          "filename": "app/socials/actions.ts"
+        }
+      },
+      "exportedName": "postMessage",
+      "filename": "app/socials/actions.ts"
+    }
+  },
+  "edge": {}
+}
