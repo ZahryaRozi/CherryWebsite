@@ -96,7 +96,7 @@ export default function Sidebar() {
         <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
           <audio 
             ref={audioRef}
-            src="/resources/Main/Audio/Dawning of the Season.mp3l" 
+            src="/resources/Main/Audio/Dawning of the Season.mp3" 
             preload="metadata"
             onTimeUpdate={() => {
               if (audioRef.current) {
