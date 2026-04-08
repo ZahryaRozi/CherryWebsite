@@ -57,7 +57,6 @@ export default function Sidebar() {
     if (audioRef.current) audioRef.current.volume = volume;
   }, [volume]);
 
-  // Robust Toggle Function
   const togglePlay = async () => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -177,7 +176,7 @@ export default function Sidebar() {
         <div className="space-y-6">
           <div>
             <div className="flex flex-wrap gap-2">
-              {["🌷͙֒≽^• ˕ • ྀི≼ She/Her ≽^• ˕ • ྀི≼🌷͙֒", "🐾 I <3 Cats 🐾","⚠️ FRICK 'AI' ART!!!! ⚠️", "🍦 I Love Icecream!! 🍦", "🌈 Nyan Nyan 🌈" , "▀▄▀▄▀▄ WE SCENE 4EVR ▀▄▀▄▀▄" , "🩷 Pink! Pink! .... I <3 Pink!! 🩷" , "😎 BE COOL 😎","🏳️‍🌈 I Support Gay Rights 🏳️‍🌈", "🥖 Teto Fan 🥖", "⦮ ⦯ RAWR RAWR RAWR ⦮ ⦯"].map((g) => (
+              {["🌷͙֒≽^• ˕ • ྀི≼ She/Her ≽^• ˕ • ྀི≼🌷͙֒", "🐾 I <3 Cats 🐾","⚠️ FRICK 'AI' ART!!!! ⚠️", "🍦 I Love Icecream!! 🍦", "🌈 Nyan Nyan 🌈", "🥖 Teto Fan 🥖" , "▀▄▀▄▀▄ WE SCENE 4EVR ▀▄▀▄▀▄" , "🩷 Pink! Pink! .... I <3 Pink!! 🩷" , "😎 BE COOL 😎","🏳️‍🌈 I Support Gay Rights 🏳️‍🌈", "⦮ ⦯ RAWR RAWR RAWR ⦮ ⦯"].map((g) => (
                 <span key={g} className="bg-white/5 border border-white/5 px-3 py-1 rounded-full text-[11px] text-zinc-300 font-body">{g}</span>
               ))}
             </div>

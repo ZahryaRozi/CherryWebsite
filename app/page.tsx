@@ -23,7 +23,7 @@ export default function Home() {
 
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter mb-6 text-white">
-            Welcome! My name is <span className="text-primary italic">Zahrya Rozi</span>
+            Welcome! My name is <span className="text-primary">Zahrya Rozi</span>
           </h1>
           <p className="text-zinc-400 italic text-lg mb-4">
             "I'm feelin lost, but on track to a new mind. And my back's to the past, don't be scared for me."

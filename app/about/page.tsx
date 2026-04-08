@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="md:col-span-7 space-y-6">
           <Card title="Hello there!">
             <h1 className="text-4xl font-headline font-black text-white mb-4 tracking-tighter">
-              I'm <span className="text-primary italic">Zahrya Rozi.</span>
+              I'm <span className="text-primary">Zahrya Rozi.</span>
             </h1>
             <div className="space-y-4 text-zinc-300 font-body leading-relaxed text-lg">
               <p>I excitedly welcome you to my website's about me!</p>
@@ -41,14 +41,14 @@ export default function AboutPage() {
       <Card title="" className="bg-primary/5 border-primary/10">
         <div className="space-y-6 text-zinc-300 font-body leading-relaxed text-lg">
             <p>
-                As you saw at the <span className="text-primary italic font-bold">Home page</span>, I'm another 20yo <span className="text-secondary font-bold">Colombian</span> on the <em className="italic text-tertiary">Wired</em>! 
-                I usually spend most of my time on <span className="text-primary/80">my pc</span> either playing MC or trying to learn to code as much as I can. 
-                <span className="text-primary italic">This website</span> is a way for me to test, practice and learn more about code (Especially HTML, CSS and JS) and stuff!!
+                As you saw at the <span className="text-primary font-bold">Home page</span>, I'm another 20yo <span className="text-secondary font-bold">Colombian</span> on the <em className="text-tertiary">Wired</em>! 
+                I usually spend most of my time on <span className="text-primary/80">my pc</span> either playing MC or trying to learn to code as much as I can.  
+                <span className="text-primary"> This website</span> is a way for me to test, practice and learn more about code (Especially HTML, CSS and JS) and stuff!!
             </p>
-            <p>After <span className="text-primary italic">this website</span>, I have plans to start working on Java and Kotlin for my programming career!</p>
+            <p>After <span className="text-primary">this website</span>, I have plans to start working on Java and Kotlin for my programming career!</p>
             <div className="text-secondary text-2xl py-2 select-none">ദി (˶⎚⤙⎚˶)</div>
             <p>
-                I really want to <em className="text-white font-bold">thank you</em> for visiting <span className="text-primary italic">my page</span>, 
+                I really want to <em className="text-white font-bold">thank you</em> for visiting <span className="text-primary">my page</span>, 
                 it may be simple but right now <span className="text-secondary font-bold underline decoration-secondary/30 underline-offset-4">it's worth a lot</span> to me. 
                 I hope you like it and/or find anything you're looking for!
             </p>

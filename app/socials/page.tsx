@@ -6,10 +6,10 @@ export default async function SocialsPage() {
   const messages = await sql`SELECT * FROM guestbook ORDER BY created_at DESC LIMIT 50`;
 
   const socialLinks = [
-    { name: 'Last.fm', url: 'https://www.last.fm/user/ZahryaRozi', color: 'text-secondary', desc: 'Check my scrobbles' },
-    { name: 'YT Music', url: 'https://music.youtube.com/@ZahryaRozi', color: 'text-primary', desc: 'My shared playlists' },
-    { name: 'Instagram', url: 'https://www.instagram.com/zahryarozi', color: 'text-tertiary', desc: 'Photos & stuff' },
-    { name: 'Steam', url: 'https://steamcommunity.com/id/zzahryrozi/', color: 'text-blue-400', desc: 'Gaming profile' },
+    { name: 'Last.fm', url: 'https://www.last.fm/user/ZahryaRozi', color: 'text-secondary', desc: 'Check my scrobbles and find some music!' },
+    { name: 'YT Music', url: 'https://music.youtube.com/@ZahryaRozi', color: 'text-primary', desc: 'I like to share the playlists I like' },
+    { name: 'Instagram', url: 'https://www.instagram.com/zahryarozi', color: 'text-tertiary', desc: 'Photos & stuff. You can see the stuff I repost too' },
+    { name: 'Steam', url: 'https://steamcommunity.com/id/zzahryrozi/', color: 'text-blue-400', desc: 'I suck at games, but you can see what I play here!' },
   ];
 
   return (
@@ -20,7 +20,7 @@ export default async function SocialsPage() {
         <div 
           className="absolute inset-0 bg-[url('/resources/Socials/lowqualBanner.jpeg')] bg-cover bg-center blur-md scale-110 brightness-50"
         />
-        <h1 className="relative text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-white uppercase italic">
+        <h1 className="relative text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-white uppercase">
           Social <span className="text-primary">Stuff</span>
         </h1>
       </section>
@@ -29,7 +29,7 @@ export default async function SocialsPage() {
         
         {/* 2. SOCIAL LINKS (LEFT COLUMN) */}
         <div className="lg:col-span-5 space-y-6">
-          <h2 className="text-xs font-headline font-bold uppercase tracking-[0.3em] text-zinc-500 px-4">Find me on</h2>
+          <h2 className="text-xs font-headline font-bold uppercase tracking-[0.3em] text-zinc-500 px-4">Here are some places you can find me!!</h2>
           <div className="grid grid-cols-1 gap-4">
             {socialLinks.map((link) => (
               <a 

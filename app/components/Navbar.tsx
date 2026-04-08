@@ -30,8 +30,8 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <a href='/socials'>{/* Using On-Primary (#1C1B1F) for the text color here */}
-            <button className="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm transition-all hover:scale-95 active:scale-90 shadow-lg shadow-primary/20">
+          <a href='/socials'>
+            <button className="bg-primary text-neutral-dark px-6 py-2 rounded-full font-bold text-sm transition-all hover:scale-95 active:scale-90 shadow-lg shadow-primary/20">
               Social Stuff
             </button>
           </a>
