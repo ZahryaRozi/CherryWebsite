@@ -135,7 +135,7 @@ export default function Sidebar() {
       <StatusSection />
 
       {/* Music Player */}
-      <Card title="Now Playing">
+      <Card title="Random song I wanna share">
         <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
           <audio 
             ref={audioRef}
