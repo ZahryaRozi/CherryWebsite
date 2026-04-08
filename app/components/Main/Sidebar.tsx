@@ -1,36 +1,84 @@
 "use client";
 
 import React, { useState, useRef, useEffect, memo } from 'react';
-import Script from 'next/script';
 
 // 1. ISOLATED STATUS SECTION
-// Memoized so it doesn't re-run unless necessary
 const StatusSection = memo(() => {
+  const [statusData, setStatusData] = useState<{ author: string; timeAgo: string; content: string } | null>(null);
+
   useEffect(() => {
     const fetchStatus = () => {
       fetch("https://status.cafe/users/zahryarozi/status.json")
         .then(r => r.json())
-        .then(r => {
-          const usernameEl = document.getElementById("statuscafe-username");
-          const contentEl = document.getElementById("statuscafe-content");
-          if (usernameEl && contentEl) {
-            usernameEl.innerHTML = `<a style="color: #C78593; text-decoration:none;" href="https://status.cafe/users/zahryarozi" target="_blank">${r.author}: </a> ${r.timeAgo}`;
-            contentEl.innerHTML = r.content;
-          }
-        })
+        .then(r => setStatusData(r))
         .catch(err => console.error("Status.cafe failed:", err));
     };
     fetchStatus();
   }, []);
 
   return (
-    <div className="bg-surface-bright border border-white/10 p-6 rounded-[2rem] shadow-lg">
-      <h3 className="text-primary font-headline font-bold mb-4 uppercase tracking-tighter text-xs">Current Status</h3>
-      <div id="statuscafe">
-        <div id="statuscafe-username" className="text-tertiary font-bold text-xs uppercase tracking-widest mb-2"></div>
-        <div id="statuscafe-content" className="text-zinc-300 italic font-body text-sm leading-relaxed">Loading...</div>
+    <div className="bg-surface-bright border border-white/10 p-6 rounded-[2rem] shadow-lg relative overflow-hidden min-h-[160px] flex flex-col justify-center">
+      {/* Animation Styles */}
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0) rotate(var(--base-rotation, 0deg)); }
+          50% { transform: translateY(-22px) rotate(var(--float-rotation, 10deg)); }
+        }
+        @keyframes typewriter {
+          from { clip-path: inset(0 100% 0 0); }
+          to { clip-path: inset(0 0 0 0); }
+        }
+        @keyframes textWave {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-3px); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-typewriter { animation: typewriter 2s steps(40, end) forwards; }
+        .animate-wave { animation: textWave 4s ease-in-out infinite; }
+      `}</style>
+      
+      {/* Background Icons (z-0) */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <img src="/resources/favicon.ico" alt="" className="absolute top-2 left-2 w-10 h-10 opacity-15 animate-float" style={{ '--base-rotation': '-12deg', '--float-rotation': '5deg' } as any} />
+        <img src="/resources/favicon.ico" alt="" className="absolute top-10 left-12 w-6 h-6 opacity-10 animate-float" style={{ '--base-rotation': '45deg', '--float-rotation': '60deg', animationDelay: '1s', animationDuration: '8s' } as any} />
+        <img src="/resources/favicon.ico" alt="" className="absolute top-16 left-5 w-4 h-4 opacity-10 animate-float" style={{ '--base-rotation': '-90deg', '--float-rotation': '-70deg', animationDelay: '2s', animationDuration: '7s' } as any} />
+        <img src="/resources/favicon.ico" alt="" className="absolute bottom-2 right-2 w-10 h-10 opacity-15 animate-float" style={{ '--base-rotation': '12deg', '--float-rotation': '25deg' } as any} />
+        <img src="/resources/favicon.ico" alt="" className="absolute bottom-10 right-12 w-6 h-6 opacity-10 animate-float" style={{ '--base-rotation': '-45deg', '--float-rotation': '-30deg', animationDelay: '1.5s', animationDuration: '9s' } as any} />
+        <img src="/resources/favicon.ico" alt="" className="absolute bottom-16 right-5 w-4 h-4 opacity-10 animate-float" style={{ '--base-rotation': '90deg', '--float-rotation': '110deg', animationDelay: '0.5s', animationDuration: '5s' } as any} />
       </div>
-      <Script src="https://status.cafe/current-status.js?name=zahryarozi" strategy="lazyOnload" />
+
+      {/* Content (z-10) */}
+      <div className="relative z-10 w-full">
+        <h3 className="text-primary font-headline font-bold mb-4 uppercase tracking-tighter text-xs">
+          Current Status
+        </h3>
+        
+        <div id="statuscafe">
+          {!statusData ? (
+            <div className="text-zinc-500 animate-pulse text-sm font-body italic">
+              Connecting to the Wired...
+            </div>
+          ) : (
+            <div key={statusData.content} className="animate-typewriter overflow-hidden">
+              <div className="text-tertiary font-bold text-xs uppercase tracking-widest mb-2 animate-wave">
+                <a 
+                  style={{ color: '#C78593', textDecoration: 'none' }} 
+                  href="https://status.cafe/users/zahryarozi" 
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {statusData.author}:
+                </a> {statusData.timeAgo}
+              </div>
+              <div 
+                className="text-zinc-300 italic font-body text-sm leading-relaxed animate-wave" 
+                style={{ animationDelay: '0.2s' }}
+                dangerouslySetInnerHTML={{ __html: statusData.content }}
+              />
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 });
@@ -45,14 +93,12 @@ const Card = ({ title, children, className = "" }: { title?: string, children: R
 );
 
 export default function Sidebar() {
-  // MUSIC PLAYER STATE
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(0.5);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Sync volume safely
   useEffect(() => {
     if (audioRef.current) audioRef.current.volume = volume;
   }, [volume]);
@@ -60,10 +106,8 @@ export default function Sidebar() {
   const togglePlay = async () => {
     const audio = audioRef.current;
     if (!audio) return;
-
     try {
       if (audio.paused) {
-        // Force a fresh load if we're stuck
         if (audio.readyState === 0) audio.load();
         await audio.play();
         setIsPlaying(true);
@@ -72,7 +116,7 @@ export default function Sidebar() {
         setIsPlaying(false);
       }
     } catch (err) {
-      console.warn("Playback interrupted. Try clicking again.", err);
+      console.warn("Playback interrupted.", err);
       setIsPlaying(false);
     }
   };
@@ -90,7 +134,7 @@ export default function Sidebar() {
 
       <StatusSection />
 
-      {/* 2. Music Player */}
+      {/* Music Player */}
       <Card title="Now Playing">
         <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
           <audio 
@@ -100,7 +144,6 @@ export default function Sidebar() {
             onTimeUpdate={() => {
               if (audioRef.current) {
                 setCurrentTime(audioRef.current.currentTime);
-                // Double check duration in case metadata was late
                 if (duration === 0 && audioRef.current.duration > 0) {
                   setDuration(audioRef.current.duration);
                 }
@@ -120,7 +163,6 @@ export default function Sidebar() {
             </div>
           </div>
 
-          {/* Progress Bar Container */}
           <div 
             className="w-full bg-white/10 h-1.5 rounded-full mb-2 relative cursor-pointer group" 
             onClick={(e) => {
@@ -131,12 +173,10 @@ export default function Sidebar() {
               }
             }}
           >
-            {/* The Actual Progress Fill */}
             <div 
               className="bg-primary h-full rounded-full shadow-[0_0_8px_#FF94B4] relative" 
               style={{ width: `${duration > 0 ? (currentTime / duration) * 100 : 0}%` }}
             >
-              {/* The Knob/Thumb */}
               <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3 h-3 bg-primary rounded-full shadow-lg border border-white/20 scale-100 group-hover:scale-125 transition-transform" />
             </div>
           </div>

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/next"
+import FallingPetals from "./components/Global/FallingPetals";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -27,12 +28,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${jakarta.variable} ${vietnam.variable}`}>
-      <body className="antialiased flex flex-col min-h-screen bg-neutral-dark">
+      <body className="antialiased flex flex-col min-h-screen bg-neutral-dark relative">
+        <FallingPetals /> 
         <Navbar />
-        {/* flex-grow ensures the footer stays at the bottom on short pages */}
-        <main className="flex-grow pt-24">
+        
+        {/* 2. Give your main content a higher z-index than the petals */}
+        <main className="flex-grow pt-24 relative z-10">
           {children}
         </main>
+        
         <Footer />
       </body>
     </html>

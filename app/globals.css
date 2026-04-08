@@ -59,3 +59,55 @@ input[type='range']::-moz-range-thumb {
   background: var(--color-primary);
   border-radius: 10px;
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--base-rotation, 0deg));
+  }
+  50% {
+    transform: translateY(-12px) rotate(var(--float-rotation, 10deg));
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes typewriter {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes textWave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.animate-typewriter {
+  animation: typewriter 2s steps(40, end) forwards;
+}
+
+.animate-wave {
+  animation: textWave 4s ease-in-out infinite;
+}
+
+@keyframes fall-drift {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(110vh) translateX(150px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-fall-drift {
+  animation: fall-drift linear infinite;
+}

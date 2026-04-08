@@ -18,8 +18,20 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#1C1B1F]/60 backdrop-blur-xl border-b border-white/5">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-        <div className="text-2xl font-bold tracking-tighter text-white font-headline">
-          CherryWebsite
+        {/* Brand Section with Favicon "Period" */}
+        <div className="flex items-baseline gap-1">
+          <Link href="/" className="text-2xl font-bold tracking-tighter text-white font-headline">
+            CherryWebsite
+          </Link>
+          <img 
+            src="/resources/favicon.ico" 
+            alt="" 
+            className="w-5 h-5 transition-transform hover:scale-110 active:rotate-12"
+            style={{ 
+              transform: 'rotate(-15deg) translateY(4px)',
+              filter: 'drop-shadow(0 0 8px rgba(255, 148, 180, 0.3))'
+            }}
+          />
         </div>
         
         <div className="hidden md:flex items-center gap-8 font-label text-sm font-medium tracking-tight">
