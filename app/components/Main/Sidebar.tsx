@@ -316,6 +316,28 @@ export default function Sidebar() {
           <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Lumierae</p>
         </div>
       </Card>
+
+
+      {/* 14. Teto Best Stomper idk*/}
+      <div className="bg-surface-bright border border-white/10 rounded-[2rem] shadow-lg overflow-hidden group">
+        <img src="https://pbs.twimg.com/media/HEBERM-bQAAfDvN?format=jpg" alt="PureArt" className="w-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        <div className="px-6 py-5 border-t border-white/5">
+          <p className="text-[10px] text-zinc-400 font-bold">Credits to <a href="https://x.com/midorikames14/status/2035702098495717863/photo/1" target="_blank" className="text-secondary hover:underline">@midorikames14</a></p>
+        </div>
+      </div>
+
+      {/* 15. Reminder to be cool */}
+      <Card className="bg-primary/5 border-primary/10">
+        <div className="space-y-6 text-sm italic text-zinc-300 font-body leading-relaxed">
+          <p>[Heavy Breathing] <br/> "Hello it's me! I have successfully infiltrated the Sidebar to tell you to not forget to sign my Guestbook!! Find it on the socials page!!"<br/>[Crash]<br/>"Yikes! It's the J*b Appl*cation. I gotta go, bye!!"</p>
+          <p className="text-secondary not-italic font-bold text-[10px] uppercase tracking-tighter">— Zahrya Rozi</p>
+        </div>
+      </Card>
+
+      {/* 16 Yes, I used the AlarmOff teto subreddit for this. */}
+      <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-lg">
+        <img src="/resources/Main/images/Sidebar/ITriedToUseTheLinkButRedditWouldntLetMe.png" alt="TetoImages" className="w-full h-auto" />
+      </div>
     </div>
   );
 }
