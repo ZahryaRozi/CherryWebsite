@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-12 pb-20">
       {/* Hero Section */}
-    <section className="relative overflow-hidden border border-white/10 rounded-[3rem] p-8 md:p-16 mb-12 flex flex-col md:flex-row items-center gap-12 min-h-[400px]">
+    <section className="animate-reveal-down relative overflow-hidden border border-white/10 rounded-[3rem] p-8 md:p-16 mb-12 flex flex-col md:flex-row items-center gap-12 min-h-[400px]">
     
       <div className="absolute inset-0 z-0">
         <img 
@@ -44,11 +44,11 @@ export default function Home() {
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        <aside className="lg:col-span-4 space-y-8 order-2 lg:order-1">
+        <aside className="animate-reveal-right lg:col-span-4 space-y-8 order-2 lg:order-1">
           <Sidebar />
         </aside>
         
-        <main className="lg:col-span-8 space-y-8 order-1 lg:order-2">
+        <main className="animate-reveal lg:col-span-8 space-y-8 order-1 lg:order-2">
           {BLOG_POSTS.map((post) => (
             <BlogEntry 
               key={post.id}

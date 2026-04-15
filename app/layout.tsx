@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/next"
 import FallingPetals from "./components/Global/FallingPetals";
+import MouseTrail from "./components/Global/MouseTrail"
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${jakarta.variable} ${vietnam.variable}`}>
       <body className="antialiased flex flex-col min-h-screen bg-neutral-dark relative">
         <FallingPetals /> 
+        <MouseTrail />
         <Navbar />
         
         {/* 2. Give your main content a higher z-index than the petals */}

@@ -16,7 +16,7 @@ export default function ProjectsPage() {
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-12 pb-20">
       {/* Main Placeholder Card */}
-      <div className="bg-surface-bright border border-white/10 rounded-[3rem] p-12 md:p-24 shadow-2xl flex flex-col items-center justify-center text-center min-h-[60vh] relative overflow-hidden">
+      <div className="animate-reveal bg-surface-bright border border-white/10 rounded-[3rem] p-12 md:p-24 shadow-2xl flex flex-col items-center justify-center text-center min-h-[60vh] relative overflow-hidden">
         
         {/* Background Glow Effect */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/5 blur-[120px] rounded-full -z-10"></div>
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
         </h1>
         
         <p className="text-zinc-400 text-lg md:text-xl font-body max-w-2xl leading-relaxed">
-          I haven't uploaded any projects to the <span className="text-secondary italic font-bold">Wired</span> yet. <br/>
+          I haven't uploaded any projects to the <span className="text-secondary font-bold">Wired</span> yet. <br/>
           Check back later once I've finished cooking something up!
         </p>
 

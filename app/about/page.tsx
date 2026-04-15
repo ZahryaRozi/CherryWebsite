@@ -15,7 +15,7 @@ export default function AboutPage() {
       
       {/* 1. Header & Intro Section */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-        <div className="md:col-span-5 bg-surface-bright border border-white/10 rounded-[3.5rem] overflow-hidden shadow-2xl">
+        <div className="animate-reveal-right md:col-span-5 bg-surface-bright border border-white/10 rounded-[3.5rem] overflow-hidden shadow-2xl">
           <img 
             src="/resources/AboutMe/ZahryaWave.png" 
             alt="Zahrya Waving" 
@@ -23,7 +23,7 @@ export default function AboutPage() {
           />
         </div>
 
-        <div className="md:col-span-7 space-y-6">
+        <div className="animate-reveal-down md:col-span-7 space-y-6">
           <Card title="Hello there!">
             <h1 className="text-4xl font-headline font-black text-white mb-4 tracking-tighter">
               I'm <span className="text-primary">Zahrya Rozi.</span>
@@ -38,7 +38,7 @@ export default function AboutPage() {
       </div>
 
       {/* Detailed Bio Card */}
-      <Card title="" className="bg-primary/5 border-primary/10">
+      <Card title="" className="animate-reveal bg-primary/5 border-primary/10">
         <div className="space-y-6 text-zinc-300 font-body leading-relaxed text-lg">
             <p>
                 As you saw at the <span className="text-primary font-bold">Home page</span>, I'm another 20yo <span className="text-secondary font-bold">Colombian</span> on the <em className="text-tertiary">Wired</em>! 
@@ -56,7 +56,7 @@ export default function AboutPage() {
       </Card>
 
       {/* 2. Likes & Dislikes Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="animate-reveal grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card title="Likes" titleColor="text-secondary">
           <ul className="space-y-3 font-body text-zinc-300">
             {["Color Pink", "Photography", "Nature's Scenes", "Anime", "Manga", "Music!", "Walking", "Tea"].map(item => (
@@ -89,10 +89,10 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col justify-center h-full space-y-4">
               <div>
-                <h3 className="text-3xl font-headline font-black text-white tracking-tighter italic">Sharari</h3>
+                <h3 className="text-3xl font-headline font-black text-white tracking-tighter ">Sharari</h3>
                 <p className="text-tertiary font-bold uppercase tracking-[0.2em] text-xs">Yunosuke & Hatsune Miku</p>
               </div>
-              <div className="p-5 bg-white/5 rounded-2xl border-l-4 border-tertiary italic text-sm text-zinc-400 leading-relaxed">
+              <div className="p-5 bg-white/5 rounded-2xl border-l-4 border-tertiary  text-sm text-zinc-400 leading-relaxed">
                 "Swish and swoosh, see <br/>leave your body to the rhythm,<br/> that might just melt the snow away and come to my side"
               </div>
             </div>
@@ -146,15 +146,15 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col justify-center h-full space-y-4 text-center md:text-right">
               <div>
-                <h3 className="text-3xl font-headline font-black text-white tracking-tighter italic">Blue Exorcist</h3>
+                <h3 className="text-3xl font-headline font-black text-white tracking-tighter ">Blue Exorcist</h3>
               </div>
-              <div className="p-5 bg-white/5 rounded-2xl border-r-4 border-secondary italic text-sm text-zinc-400 leading-relaxed">
+              <div className="p-5 bg-white/5 rounded-2xl border-r-4 border-secondary  text-sm text-zinc-400 leading-relaxed">
                 "Don't you think that true memories are a combination of fun ones and painful ones?"
-                <span className="block mt-3 not-italic font-bold text-[10px] text-secondary/60 uppercase tracking-widest">-Rin Okumura</span>
+                <span className="block mt-3 not- font-bold text-[10px] text-secondary/60 uppercase tracking-widest">-Rin Okumura</span>
               </div>
-              <div className="p-5 bg-white/5 rounded-2xl border-r-4 border-secondary italic text-sm text-zinc-400 leading-relaxed">
+              <div className="p-5 bg-white/5 rounded-2xl border-r-4 border-secondary  text-sm text-zinc-400 leading-relaxed">
                 "You'll never be able to move forward if you're afraid of soiling your hands." 
-                <span className="block mt-3 not-italic font-bold text-[10px] text-secondary/60 uppercase tracking-widest">-Fujimoto Shirou </span>
+                <span className="block mt-3 not- font-bold text-[10px] text-secondary/60 uppercase tracking-widest">-Fujimoto Shirou </span>
               </div>
             </div>
           </div>

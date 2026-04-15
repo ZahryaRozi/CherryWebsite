@@ -16,7 +16,7 @@ export default async function SocialsPage() {
     <div className="max-w-7xl mx-auto px-6 md:px-12 pb-20 space-y-12">
       
       {/* 1. TOP BANNER */}
-      <section className="relative h-64 rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl flex items-center justify-center">
+      <section className="animate-reveal-down relative h-64 rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl flex items-center justify-center">
         <div 
           className="absolute inset-0 bg-[url('/resources/Socials/lowqualBanner.jpeg')] bg-cover bg-center blur-md scale-110 brightness-50"
         />
@@ -28,7 +28,7 @@ export default async function SocialsPage() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
         {/* 2. SOCIAL LINKS (LEFT COLUMN) */}
-        <div className="lg:col-span-5 space-y-6">
+        <div className="animate-reveal-right lg:col-span-5 space-y-6">
           <h2 className="text-xs font-headline font-bold uppercase tracking-[0.3em] text-zinc-500 px-4">Here are some places you can find me!!</h2>
           <div className="grid grid-cols-1 gap-4">
             {socialLinks.map((link) => (
@@ -48,7 +48,7 @@ export default async function SocialsPage() {
         </div>
 
         {/* 3. GUESTBOOK (RIGHT COLUMN) */}
-        <div className="lg:col-span-7">
+        <div className="animate-reveal lg:col-span-7">
           <div className="bg-surface-bright border border-white/10 p-8 rounded-[3rem] shadow-lg sticky top-32">
             <h3 className="text-primary font-headline font-bold mb-6 uppercase tracking-tighter text-sm">Guestbook</h3>
             

@@ -9,10 +9,20 @@ const StatusSection = memo(() => {
   useEffect(() => {
     const fetchStatus = () => {
       fetch("https://status.cafe/users/zahryarozi/status.json")
-        .then(r => r.json())
-        .then(r => setStatusData(r))
-        .catch(err => console.error("Status.cafe failed:", err));
-    };
+      .then(r => {
+        if (!r.ok) throw new Error("Network response was not ok");
+        return r.json();
+      })
+      .then(r => setStatusData(r))
+      .catch(err => {
+      console.error("Status.cafe failed:", err);
+      setStatusData({
+        author: "ZahryaRozi",
+        timeAgo: "just now",
+        content: "Uhh... So there is an issue connecting, or your wifi is a bit tired. (Connection Error)... Anyways, fun fact. The background is actually the minecraft void. So those cherry petals and flowers are going into the MC Void... Wait why am I writing this? I mean, it'll be a cool easter egg for some people, but why?... actually it will be really funny. Imagine some random user just accidentally finding this, lmaooo....... Oh and just realized nothing is stopping me from doing a funni and wasting sidebar space and just typing a lot of useless text to move the entire sidebar down. I wonder what I'll do?"
+      });
+    });
+};
     fetchStatus();
   }, []);
 

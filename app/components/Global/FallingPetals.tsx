@@ -22,7 +22,9 @@ export default function FallingPetals() {
   const petalImages = [
     '/resources/Global/cherry-blossom.png',
     '/resources/Global/petals.png',
-    '/resources/Global/sakura-festival.png'
+    '/resources/Global/sakura-festival.png',
+    '/resources/Global/sakura.png',
+    '/resources/Global/sakura-branch.png'
   ];
 
   useEffect(() => {
