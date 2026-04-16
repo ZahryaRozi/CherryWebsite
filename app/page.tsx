@@ -40,7 +40,7 @@ export default function Home() {
           />
         </div>
 
-        {/* Text Section - Restored and Fixed! */}
+        {/* Text Section*/}
         <div className="relative z-10 flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-7xl font-headline font-extrabold tracking-tighter mb-4 md:mb-6 text-white drop-shadow-lg">
             Welcome! My name is <span className="text-primary">Zahrya Rozi</span>
@@ -61,7 +61,7 @@ export default function Home() {
         
         {/* Sidebar Overlay (Mobile) & Static Sidebar (Desktop) */}
         <aside className={`
-          fixed inset-y-0 left-0 z-[55] w-[85%] max-w-[320px] bg-neutral-dark/95 backdrop-blur-2xl p-6 border-r border-white/10 overflow-y-auto transition-transform duration-500 ease-in-out
+          animate-reveal-right fixed inset-y-0 left-0 z-[55] w-[85%] max-w-[320px] bg-neutral-dark/95 backdrop-blur-2xl p-6 border-r border-white/10 overflow-y-auto transition-transform duration-500 ease-in-out
           lg:relative lg:translate-x-0 lg:w-full lg:max-w-none lg:bg-transparent lg:p-0 lg:border-none lg:overflow-visible lg:col-span-4 lg:order-1
           ${isSidebarOpen ? "translate-x-0 shadow-[20px_0_50px_rgba(0,0,0,0.5)]" : "-translate-x-full lg:translate-x-0"}
         `}>
