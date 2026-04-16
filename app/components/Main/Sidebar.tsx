@@ -141,6 +141,7 @@ export default function Sidebar() {
   return (
     <div className="flex flex-col gap-6">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <div className="flex flex-col gap-8 w-full"></div>
 
       <StatusSection />
 

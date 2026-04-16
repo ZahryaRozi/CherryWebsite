@@ -35,30 +35,41 @@ export default function MouseTrail() {
       canvas.height = window.innerHeight;
     };
 
-    const handleMouseMove = (e: MouseEvent) => {
-      mouse.current = { x: e.clientX, y: e.clientY, active: true };
-      
-      // Spawn petals only when moving
+    const spawnParticle = (x: number, y: number) => {
       if (Math.random() > 0.3) { 
         particles.current.push({
-          x: e.clientX,
-          y: e.clientY,
-          size: Math.random() * 20 + 10,
+          x: x,
+          y: y,
+          size: Math.random() * 15 + 10,
           vx: (Math.random() - 0.5) * 2,
-          vy: (Math.random() - 0.5) * 2 + 1, // Slight downward gravity
+          vy: (Math.random() - 0.5) * 2,
           rotation: Math.random() * 360,
-          spin: (Math.random() - 0.5) * 10,
+          spin: (Math.random() - 0.5) * 5,
           opacity: 1,
         });
       }
     };
 
+    const handleMouseMove = (e: MouseEvent) => {
+      mouse.current = { x: e.clientX, y: e.clientY, active: true };
+      spawnParticle(e.clientX, e.clientY);
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      const touch = e.touches[0];
+      mouse.current = { x: touch.clientX, y: touch.clientY, active: true };
+      spawnParticle(touch.clientX, touch.clientY);
+    };
+
     window.addEventListener('resize', handleResize);
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchstart', handleTouchMove);
+    window.addEventListener('touchmove', handleTouchMove);
+    
     handleResize();
 
     const render = () => {
-      // Clear the entire canvas every frame to prevent smearing
+      // Clearing
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       for (let i = 0; i < particles.current.length; i++) {
@@ -102,6 +113,8 @@ export default function MouseTrail() {
     return () => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('touchstart', handleTouchMove);
+      window.removeEventListener('touchmove', handleTouchMove);
       cancelAnimationFrame(animId);
     };
   }, []);
@@ -110,7 +123,7 @@ export default function MouseTrail() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-[9999]"
-      style={{ filter: 'drop-shadow(0 0 5px rgba(255, 148, 180, 0.3))' }}
+      style={{ mixBlendMode: 'screen' }}
     />
   );
 }
