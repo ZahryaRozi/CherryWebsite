@@ -50,7 +50,6 @@ export default function Navbar() {
           <div className="col-span-2 md:col-span-1 flex items-center justify-center md:justify-center gap-4 md:gap-8 font-label text-[11px] md:text-sm font-medium tracking-tight border-t border-white/5 pt-2 md:border-none md:pt-0">
             <Link href="/" className={getLinkStyles("/")}>Home</Link>
             <Link href="/project" className={getLinkStyles("/project")}>Projects</Link>
-            <a href="/MyOCs/loader.html" className={getLinkStyles("/StoriesMain")}>MyOCs</a>
             <Link href="/about" className={getLinkStyles("/about")}>About</Link>
           </div>
 
