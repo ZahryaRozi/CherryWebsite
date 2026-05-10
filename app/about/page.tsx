@@ -149,11 +149,11 @@ export default function AboutPage() {
         <Card title="Others" titleColor="text-zinc-500" className="md:col-span-4">
           <div className="space-y-3 md:space-y-4">
             {[
-              { title: 'glitter ✩‧₊˚', artist: 'Lexycat' },
-              { title: 'Raspberry Kisses', artist: 'Amine' },
+              { title: 'TRISH!', artist: 'ISSBROKIE' },
+              { title: 'i don\'t mean to pry. ', artist: 'shteppi' },
               { title: '2005', artist: 'South Arcade' },
               { title: 'BIRDBRAIN', artist: 'Jamie Paige' },
-              { title: 'Sludge [Full 20Min]', artist: 'Vylet Pony' },
+              { title: 'Doritos & Fritos', artist: '100 gecs' },
             ].map((track, i) => (
               <div key={i} className="group cursor-default">
                 <p className="text-white font-bold text-xs md:text-sm group-hover:text-secondary transition-colors">
