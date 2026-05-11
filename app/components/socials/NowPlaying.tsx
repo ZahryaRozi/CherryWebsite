@@ -15,7 +15,7 @@ type Track = {
 export default function NowPlaying() {
   const [track, setTrack] = useState<Track | null>(null);
   const [auraColor, setAuraColor] = useState<string>('#FF94B4'); // Fallback in case the Image doesnt load
-  const bannerRef = useRef<HTMLDivElement>(null);
+  const bannerRef = useRef<HTMLAnchorElement>(null);
 
   // Function to extract dominant color from the image/cover
   const getAverageColor = (url: string) => {

@@ -19,7 +19,7 @@ export default function MusicAura({
   color 
 }: { 
   isActive: boolean; 
-  containerRef: React.RefObject<HTMLDivElement | null>;
+  containerRef: React.RefObject<HTMLAnchorElement | null>; 
   color: string;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
