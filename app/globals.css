@@ -163,3 +163,21 @@ input[type='range']::-moz-range-thumb {
   opacity: 0;
   animation: fadeInRight 0.8s ease-out forwards;
 }
+
+
+
+@keyframes nowPlayingPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4; 
+  }
+
+  50% {
+    transform: scale(1.1); 
+    opacity: 0.7; 
+  }
+}
+
+.animate-nowplaying-pulse {
+  animation: nowPlayingPulse 3s ease-in-out infinite; 
+}

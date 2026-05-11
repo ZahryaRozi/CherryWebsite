@@ -8,14 +8,14 @@ export default function Footer() {
     <footer className="w-full py-16 bg-[#1C1B1F]/40 backdrop-blur-md border-t border-white/5">
       <div className="flex flex-col md:flex-row justify-between items-start px-8 gap-8 max-w-7xl mx-auto">
         
-        {/* Left Section - Aligned Left */}
+        {/* Left Section*/}
         <div className={`${footerTextStyle} text-left`}>
           Zahrya's Website <br/>
           Made with love by Zahrya Rozi <br/>
           "A site made by a Wired for The Wired"
         </div>
 
-        {/* Right Section - Aligned Right */}
+        {/* Right Section */}
         <div className="flex flex-col items-end gap-10">
           <div className={`${footerTextStyle} text-right`}>
             Developed in 2025-2026 <br/>
