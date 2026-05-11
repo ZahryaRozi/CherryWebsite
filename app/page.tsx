@@ -51,7 +51,7 @@ export default function Home() {
           </p>
           
           <p className="text-zinc-200 leading-relaxed max-w-2xl text-base md:text-lg font-body drop-shadow-md">
-            Another 20yo Wired from the internet!! I'm kinda shy and introverted but friendly (or at least I try to be), plus I'm not used to talking too much.
+            Another 20yo Wired from the internet!! I'm kinda introverted but friendly (or at least I try to be), plus I'm not used to talking too much so expect me to struggle to continue conversations.
           </p>
         </div>
       </section>
