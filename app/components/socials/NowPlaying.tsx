@@ -39,9 +39,11 @@ export default function NowPlaying() {
       const res = await fetch('/api/now-playing');
       const data = await res.json();
       setTrack(data);
-      if (data.art) getAverageColor(data.art);
+      if (data && data.art) {
+      getAverageColor(data.art);
+      }
     } catch (err) {
-      console.error(err);
+      console.error("Failed to fetch track:", err);
     }
   }
 
@@ -96,10 +98,10 @@ export default function NowPlaying() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: auraColor }} />
                     <span className="relative inline-flex rounded-full h-2 w-2" style={{ backgroundColor: auraColor }} />
                   </span>
-                  <span className="text-[10px] uppercase tracking-widest font-bold font-headline" style={{ color: auraColor }}>I'm currently listening to: </span>
+                  <span className="text-[10px] tracking-widest font-bold font-headline" style={{ color: auraColor }}>I'M CURRENTLY (Literally rn, this is Live) LISTENING TO: </span>
                 </>
               ) : (
-                <span className="text-zinc-500 text-[10px] uppercase tracking-widest font-bold font-headline">I last lisetened to: </span>
+                <span className="text-zinc-500 text-[10px] tracking-widest font-bold font-headline">I last lisetened to the next beautiful song: </span>
               )}
             </div>
             <p className="text-white font-headline font-bold text-sm md:text-base truncate">{track.name}</p>
