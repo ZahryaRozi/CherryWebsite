@@ -31,7 +31,7 @@ export default function FallingPetals() {
     const newPetals = Array.from({ length: 60 }).map((_, i) => ({
       id: i,
       src: petalImages[Math.floor(Math.random() * petalImages.length)],
-      size: `${Math.random() * 15 + 15}px`,
+      size: `${Math.random() * 15 + 25}px`,
       left: `${Math.random() * 100}%`,
       top: `${Math.random() * 100 - 20}%`,
       delay: `${Math.random() * -20}s`,

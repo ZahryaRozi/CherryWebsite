@@ -150,7 +150,7 @@ export default function Sidebar() {
         <div className="bg-white/5 rounded-2xl p-5 border border-white/5">
           <audio 
             ref={audioRef}
-            src="/resources/Main/Audio/Dawning of the Season.mp3" 
+            src="/resources/Main/Audio/trish.mp3" 
             preload="metadata"
             onTimeUpdate={() => {
               if (audioRef.current) {
@@ -167,10 +167,10 @@ export default function Sidebar() {
           />
           
           <div className="flex gap-4 mb-5">
-            <img src="https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F3e2680f2877d4a5aab381e092c8d4812.1000x1000x1.jpg" alt="Album" className="w-16 h-16 rounded-xl object-cover" />
+            <img src="https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F0a76c125847eb6030828addd597c651f.1000x1000x1.png" alt="Album" className="w-16 h-16 rounded-xl object-cover" />
             <div className="flex flex-col justify-center">
-              <h4 className="text-primary font-bold text-sm">Dawning of the Season (Preview)</h4>
-              <p className="text-zinc-500 text-xs font-body">Magdalena Bay</p>
+              <h4 className="text-primary font-bold text-sm">TRISH! (Preview)</h4>
+              <p className="text-zinc-500 text-xs font-body">ISSBROKIE</p>
             </div>
           </div>
 
@@ -227,7 +227,7 @@ export default function Sidebar() {
         <div className="space-y-6">
           <div>
             <div className="flex flex-wrap gap-2">
-              {["🌷͙֒≽^• ˕ • ྀི≼ She/Her ≽^• ˕ • ྀི≼🌷͙֒", "🐾 I <3 Cats 🐾","⚠️ FRICK 'AI' ART!!!! ⚠️", "🍦 I Love Icecream!! 🍦", "🌈 Nyan Nyan 🌈", "🥖 Teto Fan 🥖" , "▀▄▀▄▀▄ WE SCENE 4EVR ▀▄▀▄▀▄" , "🩷 Pink! Pink! .... I <3 Pink!! 🩷" , "😎 BE COOL 😎","🏳️‍🌈 I Support Gay Rights 🏳️‍🌈", "⦮ ⦯ RAWR RAWR RAWR ⦮ ⦯"].map((g) => (
+              {["🌷͙֒≽^• ˕ • ྀི≼ She/Her ≽^• ˕ • ྀི≼🌷͙֒", "🐾 I <3 Cats 🐾","⚠️ FRICK 'AI' ART!!!! ⚠️", "🏳️‍⚧️ Trans 4 Life!! 🏳️‍⚧️", "🍦 I Love Icecream!! 🍦", "🌈 Nyan Nyan 🌈", "🥖 Teto Fan 🥖" , "🩷 Pink! Pink! .... I <3 Pink!! 🩷" , "😎 BE COOL 😎","🏳️‍🌈 I Support Gay Rights 🏳️‍🌈" ].map((g) => (
                 <span key={g} className="bg-white/5 border border-white/5 px-3 py-1 rounded-full text-[11px] text-zinc-300 font-body">{g}</span>
               ))}
             </div>

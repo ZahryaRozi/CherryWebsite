@@ -61,9 +61,9 @@ export default function Home() {
         
         {/* Sidebar Overlay (Mobile) & Static Sidebar (Desktop) */}
         <aside className={`
-          animate-reveal-right fixed inset-y-0 left-0 z-[55] w-[85%] max-w-[320px] bg-neutral-dark/95 backdrop-blur-2xl p-6 border-r border-white/10 overflow-y-auto transition-transform duration-500 ease-in-out
-          lg:relative lg:translate-x-0 lg:w-full lg:max-w-none lg:bg-transparent lg:p-0 lg:border-none lg:overflow-visible lg:col-span-4 lg:order-1
-          ${isSidebarOpen ? "translate-x-0 shadow-[20px_0_50px_rgba(0,0,0,0.5)]" : "-translate-x-full lg:translate-x-0"}
+          animate-reveal-right fixed inset-y-4 left-4 z-[55] w-[calc(100%-2rem)] max-w-[320px] bg-surface-bright/95 backdrop-blur-xl p-6 border border-white/10 rounded-[2rem] overflow-y-auto transition-transform duration-500 ease-in-out
+          lg:relative lg:inset-0 lg:translate-x-0 lg:w-full lg:max-w-none lg:bg-transparent lg:backdrop-blur-none lg:p-0 lg:border-none lg:overflow-visible lg:col-span-4 lg:order-1
+          ${isSidebarOpen ? "translate-x-0 shadow-[20px_0_50px_rgba(0,0,0,0.5)]" : "-translate-x-[120%] lg:translate-x-0"}
         `}>
           <div className="lg:hidden mb-8 pt-4">
             <h3 className="text-primary font-headline font-bold text-xl uppercase tracking-widest">Side of Bars</h3>

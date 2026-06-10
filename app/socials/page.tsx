@@ -156,7 +156,7 @@ export default async function SocialsPage() {
               </h2>
 
               <p className="text-zinc-500 text-xs md:text-sm mt-1">
-                Leave a mark on my little corner of the internet.
+                Hello!! Welcome to my GuestBook!! If you want, Sign it and even leave a message!! I'll really appreciate it
               </p>
             </div>
 
